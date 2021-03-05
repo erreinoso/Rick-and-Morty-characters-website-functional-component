@@ -1,0 +1,66 @@
+main {
+  text-decoration: none;
+  max-height: 100%;
+  margin-top: 0px;
+  .list {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    .list__error {
+      color: white;
+      font-weight: bold;
+    }
+    @media all and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media all and (min-width: 1200px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  .serieCard {
+    height: 328px;
+    width: 210px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: (5px solid rgba(255, 255, 255, 0.2));
+    border-top-left-radius: (15px);
+    border-bottom-right-radius: (15px);
+    background-color: rgba(231, 211, 211, 0.411);
+    margin: 20px;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 15px 15px rgba(203, 235, 205, 0.4);
+    }
+    .serieCard__img {
+      max-height: 160px;
+      max-width: 170px;
+      img {
+        margin-top: 10px;
+        width: 100%;
+        border-top-left-radius: 7px;
+        border-bottom-right-radius: (7px);
+      }
+    }
+    .serieCard__text {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+a {
+  display: flex;
+  justify-content: center;
+}
