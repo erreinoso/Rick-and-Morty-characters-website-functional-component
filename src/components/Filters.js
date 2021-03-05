@@ -86,11 +86,11 @@ const Filters = (props) => {
             <img
               src={LogoTitle}
               className="header__logo"
-              alt="Imagen Rick y Morty"
+              alt="Rick and Morty"
             />
           </div>
           <div className="header__title">
-            <h1>Busca tus personajes de Rick y Morty</h1>
+            <h1>Rick and Morty characters</h1>
           </div>
         </div>
       </section>
