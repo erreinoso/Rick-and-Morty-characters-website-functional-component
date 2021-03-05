@@ -38,6 +38,26 @@
         }
       }
     }
+
+    .header--filter__box {
+      label {
+        font-size: 22px;
+        font-family: 'Creepster', cursive;
+      }
+      select {
+        height: 30px;
+        margin: 5px;
+        border: 1px solid darkcyan;
+        width: 145px;
+        font-size: 16px;
+        list-style-type: none;
+        text-decoration: none;
+        appearance: none;
+        option {
+          line-height: 20px;
+        }
+      }
+    }
     .header__box--title {
       @media all and (min-width: 768px) {
         display: block;

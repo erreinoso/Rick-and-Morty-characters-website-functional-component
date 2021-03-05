@@ -20,8 +20,6 @@ const CharacterList = (props) => {
   }else{
 
   const charactersList =props.characters.map((character, index) => {
-      console.log(character)//OK
-
       return (
           <CharacterCard
               key={index}

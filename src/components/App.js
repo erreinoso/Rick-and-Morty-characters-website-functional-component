@@ -43,7 +43,6 @@ const App = () => {
       (character) => character.id === routeCharacterId
     );
     
-  console.log('characterClicked', characterClicked);
     // Si el url de la barra de busqueda/personaje existe, me pintas la tarjeta, sino el error
     if (characterClicked) {
       return (
@@ -75,8 +74,6 @@ const App = () => {
   /* Función por LIFTING, recogemos el valor introducido en el input y los select
    y actualizamos el estado de cada filtro */
   const handleFilters = (data) => {
-    console.log('handlefilter',data);
-    console.log('handlefilter value',data.value);
 
     if (data.id === 'filterName') {
       setFilterName(data.value);
@@ -87,8 +84,6 @@ const App = () => {
     } else if (data.id === 'filterGender') {
       setFilterGender(data.value);
     }
-    console.log('CHARACTERS ', characters);
-
   };
 
   /* Función que se encarga de pintar/filtrar las tarjetas por nombre, especie, estado y género */
